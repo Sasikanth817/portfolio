@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "portfolioo_backend": {
+      "main": "src/portfolioo_backend/main.mo",
+      "type": "motoko"
+    },
+    "portfolioo_frontend": {
+      "dependencies": [
+        "portfolioo_backend"
+      ],
+      "source": [
+        "src/portfolioo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "portfolioo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

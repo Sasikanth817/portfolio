@@ -1,0 +1,230 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2.5rem 0;
+  text-align: left;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Picture in the Right Corner */
+.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+/* Header Text Styling */
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* Section and Container Styling */
+section {
+  padding: 3rem 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+/* Heading Styling */
+h2 {
+  margin-bottom: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+/* About Section Styling */
+#about p {
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+}
+
+/* Skills and Education List Styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each Skill and Education Item */
+li {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white; /* Default text color */
+  font-size: 1.1rem;
+}
+
+/* Skills Hover Effects - Change Color on Hover */
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.3); /* Lighten the background */
+}
+
+/* Individual Color for Skills */
+#iot {
+  color: #ff6347; /* Tomato */
+}
+#iot:hover {
+  color: #ffa07a; /* Light Salmon on hover */
+}
+
+#blockchain {
+  color: #1e90ff; /* DodgerBlue */
+}
+#blockchain:hover {
+  color: #00bfff; /* DeepSkyBlue on hover */
+}
+
+#ai {
+  color: #32cd32; /* LimeGreen */
+}
+#ai:hover {
+  color: #7cfc00; /* LawnGreen on hover */
+}
+
+#cloud {
+  color: #ff69b4; /* HotPink */
+}
+#cloud:hover {
+  color: #ffb6c1; /* LightPink on hover */
+}
+
+/* Hover Effect for All Skills */
+li:hover i {
+  color: #fff;
+}
+
+/* Icons for Skills and Education */
+i {
+  margin-right: 10px;
+}
+
+/* Project Styling */
+.project {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.project h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  color: #ddd;
+  text-align: justify;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section Styling */
+#contact a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+#contact p {
+  font-size: 1.2rem;
+}
+
+#contact i {
+  margin-right: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Link Hover Styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
